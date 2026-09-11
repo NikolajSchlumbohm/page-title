@@ -17,8 +17,8 @@ import { i18n } from "../i18n";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const LOGO_FILENAME = "logo.png";
 const LOGO_PATH = path.join(__dirname, "..", "static", LOGO_FILENAME);
-const hasLogo = fs.existsSync(LOGO_PATH);
-
+const hasLogo = true //fs.existsSync(LOGO_PATH);
+console.log(fs.existsSync(LOGO_PATH));
 const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
   const locale = cfg?.locale ?? "en-US";
   const title = cfg?.pageTitle ?? i18n(locale).propertyDefaults.title;
