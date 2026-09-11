@@ -50,8 +50,8 @@ PageTitle.css = `
 }
 
 .page-title-logo {
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 12.5rem;
+  max-height: 12.5rem;
   height: auto;
   width: auto;
   object-fit: contain;
