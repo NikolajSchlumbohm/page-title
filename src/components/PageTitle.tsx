@@ -29,7 +29,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
       {hasLogo && (
         <img
           class="page-title-logo"
-          src={`${baseDir}/${LOGO_FILENAME}`}
+          src={`${baseDir}/static/${LOGO_FILENAME}`}
           alt=""
           aria-hidden="true"
         />
