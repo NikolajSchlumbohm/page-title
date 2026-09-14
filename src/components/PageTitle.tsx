@@ -11,11 +11,11 @@ import { pathToRoot } from "../util/path";
 import { i18n } from "../i18n";
 
 // Prüft einmalig beim Laden des Moduls (nicht bei jedem Seiten-Render),
-// ob static/logo.png existiert. Quartz kopiert den Inhalt von `static/`
-// unverändert in die Wurzel der Website, d.h. quartz/static/logo.png
-// landet als /logo.png im Output.
+// ob static/logo.svsg existiert. Quartz kopiert den Inhalt von `static/`
+// unverändert in die Wurzel der Website, d.h. quartz/static/logo.svg
+// landet als /logo.svg im Output.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const LOGO_FILENAME = "logo.png";
+const LOGO_FILENAME = "logo.svg";
 const LOGO_PATH = path.join(__dirname, "..", "static", LOGO_FILENAME);
 const hasLogo = true //fs.existsSync(LOGO_PATH);
 console.log(fs.existsSync(LOGO_PATH));
